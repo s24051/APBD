@@ -1,11 +1,11 @@
 ﻿public class Program
 {
-    static double average(int[] ints)
+    static double average(int[] intss)
     {
         double vLocal = 0;
-        foreach (int i in ints)
+        foreach (int i in intss)
         {
-            vLocal += (double)i / ints.Length;
+            vLocal += (double)i / intss.Length;
         }
         return vLocal;
     }
