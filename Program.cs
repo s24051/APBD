@@ -9,11 +9,22 @@
         }
         return vLocal;
     }
+
+    static int max(int[] ints) {
+        int vLocal = ints.First();
+        foreach(int i in ints) {
+            if (i > vLocal)
+                vLocal = i;
+        }
+        return vLocal;
+    }
+
     static void Main()
     {
         Console.WriteLine("Zadanie pierwsze z APBD!");
         Console.WriteLine("Pierwsza aplikacja dotnet!");
         Console.WriteLine("Średnia z 5 4 2 8 7: " + average([5, 4, 2, 8, 7]));
+        Console.WriteLine("Max z 5 4 2 8 7: " + max([5, 4, 2, 8, 7]));
     }
 }
 
